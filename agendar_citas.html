@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Consultorio Médico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+     <img src="img/logo.jpg" alt="Descripción de la imagen" style="float: left;" class="logo">
+    <h1>Agendar Cita</h1>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Formulario para Agendar Cita</h2>
+    <form action="procesar_cita.php" method="post">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+        <input type="date" name="fecha" required>
+        <input type="time" name="hora" required>
+        <textarea name="comentarios" placeholder="Comentarios adicionales" rows="4"></textarea>
+        <input type="submit" value="Agendar Cita">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

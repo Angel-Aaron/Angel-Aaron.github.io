@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta Médica</title>
+    <link rel="stylesheet" href="Formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="guardar.php">
+</head>
+<body>
+    <div class="form-container">
+        <h1>FORMULARIO DE CONSULTA MÉDICA</h1>
+        <form id="consultaForm">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Seleccione...</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+             <div class="form-group">
+                <label for="nombre">Edad:</label>
+                <input type="text" id="Edad" name="Edad" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="motivo">Motivo de consulta:</label>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="historial">Historial médico (alergias, medicamentos, etc.):</label>
+                <textarea id="historial" name="historial" rows="4"></textarea>
+            </div>
+            
+            <div class="btn-container no-print">
+                <button type="button" class="btn-print" onclick="window.print()">Imprimir Formulario</button>
+                <button type="submit" class="btn-submit">Guardar Consulta</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

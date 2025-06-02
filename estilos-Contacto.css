@@ -1,0 +1,133 @@
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align:  center;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #5cb22e; /*de la parte de abajo*/
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+header { /* aqui es donde esta el recuadro de bienvenidos */
+    background: #5cb22e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* enaces a otras paginas */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+
+
+/*Contacto*/
+.contacto-container {
+    display: flex;          /* Activa Flexbox */
+    gap: 30px;              /* Espacio entre elementos */
+    align-items: center;    /* Centra verticalmente */
+    flex-wrap: wrap;        /* Permite que se apilen en móviles */
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;   /* Alinea icono y texto */
+    background-color: #f8f9fa; /* Fondo opcional */
+    padding: 8px 15px;     /* Espacio interno */
+    border-radius: 8px;     /* Bordes redondeados */
+}
+
+/* Estilos para los iconos (Font Awesome) */
+.contacto-item i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.whatsapp-icon {
+    color: #25D366;
+}
+
+.fa-phone-alt {
+    color: #0077b6;
+}
+
+.logo {
+  /*float: left;
+  margin-left: 50px; /* Ajusta el valor según sea necesario */
+/*  max-width: 5%;
+  height: auto;
+  object-fit: cover;
+  clear: both;*/
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+  z-index: 10;
+
+
+
+}

@@ -1,0 +1,173 @@
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #5cb22e; /*de la parte de abajo*/
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+header { /* aqui es donde esta el recuadro de bienvenidos */
+    background: #5cb22e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* enaces a otras paginas */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+
+
+/* styles.css */
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #48cae4;
+    --accent-color: #ff6b6b;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.servicio-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed var(--secondary-color);
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.disclaimer {
+    font-style: italic;
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.servicio-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.servicio-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.servicio-list li:before {
+    content: "•";
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .servicio-card {
+        padding: 1.5rem;
+    }
+}
+
+.logo {
+  /*float: left;
+  margin-left: 50px; /* Ajusta el valor según sea necesario */
+/*  max-width: 5%;
+  height: auto;
+  object-fit: cover;
+  clear: both;*/
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+  z-index: 10;
+
+
+
+}
