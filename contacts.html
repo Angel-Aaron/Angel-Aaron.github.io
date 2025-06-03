@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Consultorio Médico</title>
+    <link rel="stylesheet" href="estilos-Contacto.css">
+</head>
+<body>
+
+<header>
+
+     <img src="img/logo.jpg" alt="Descripción de la imagen" style="float: left;" class="logo">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <h1>Metodos de contacto </h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="agendar_citas.html">Agendar Cita</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h3>Email</h3>
+    <p>Si tienes una duda no dudes en enviarla </p>
+    <form action="procesar_contacto.php" method="post">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+        <textarea name="mensaje" placeholder="Tu Mensaje" rows="4" required></textarea>
+        <input type="submit" value="Enviar Mensaje">
+    </form>
+
+
+
+    <h2>Contáctanos</h2>
+    <p>Si tienes alguna pregunta o deseas más información, no dudes en contactarnos.</p>
+<div class="contacto-container"> <!-- Contenedor flex nuevo -->
+    <div class="contacto-item">
+        <i class="fas fa-phone-alt"></i>
+        <label for="telefono">Teléfono: 55-5527-5527</label>
+    </div>
+    <div class="contacto-item">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+        <label for="whatsapp">WhatsApp: 55-4345-4569</label>
+    </div>
+</div>
+
+
+
+</main>
+
+
+
+
+<footer>
+    <p>&copy;Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
